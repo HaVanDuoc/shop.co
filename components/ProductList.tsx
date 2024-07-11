@@ -7,13 +7,14 @@ import { useRouter } from "next/navigation";
 
 interface IProductList {
   products: IProduct[];
+  cols?: number;
 }
 
-const ProductList: React.FC<IProductList> = ({ products }) => {
+const ProductList: React.FC<IProductList> = ({ products, cols = 4 }) => {
   const router = useRouter();
 
   return (
-    <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 w-full">
+    <div className={`grid grid-cols-2 lg:grid-cols-${cols} gap-4 w-full`}>
       {products.map((product, index) => {
         const { id, name, price, discount, imageUrl, rating } = product;
         const discountPrice = discount ? price * (1 - discount / 100) : price;
@@ -37,7 +38,7 @@ const ProductList: React.FC<IProductList> = ({ products }) => {
 
             <div className="text-base font-bold capitalize">{name}</div>
             <StarRating count={rating} />
-            <div className="text-2xl font-bold flex flex-row gap-3 items-center">
+            <div className="text-2xl font-bold flex flex-row gap-3 items-center pb-4">
               <div>${discount ? discountPrice.toFixed(2) : price}</div>
               {discount && discount > 0 && (
                 <>

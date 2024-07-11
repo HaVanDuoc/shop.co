@@ -177,7 +177,6 @@ const ProductDetails = () => {
 
             {/* Count of Product */}
             <div className="flex flex-row gap-5 mt-5">
-              {/*  */}
               <div className="flex flex-row justify-center items-center bg-[#F0F0F0] py-3 px-4 rounded-full overflow-hidden gap-5">
                 <button>
                   <svg

@@ -45,7 +45,7 @@ const Footer = () => {
         </Container>
       </div>
 
-      <div className="mt-[90px] pt-[90px] bg-[#F0F0F0]">
+      <div className="mt-[120px] pt-[90px] bg-[#F0F0F0]">
         <Container>
           <div className="flex flex-row justify-between py-12 flex-wrap">
             <div className="flex flex-col lg:max-w-[350px] w-full justify-between">

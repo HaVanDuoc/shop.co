@@ -134,7 +134,7 @@ const ProductDetails = () => {
                       viewBox="0 0 24 24"
                       fill="none"
                       stroke="#ffffff"
-                      stroke-width="2"
+                      strokeWidth="2"
                       //   stroke-linecap="round"
                       stroke-linejoin="round"
                       className={clr.selected ? "opacity-100" : "opacity-0"}
@@ -186,7 +186,7 @@ const ProductDetails = () => {
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="#000000"
-                    stroke-width="2"
+                    strokeWidth="2"
                     stroke-linecap="round"
                     stroke-linejoin="round"
                   >
@@ -210,7 +210,7 @@ const ProductDetails = () => {
                     viewBox="0 0 24 24"
                     fill="none"
                     stroke="#000000"
-                    stroke-width="2"
+                    strokeWidth="2"
                     stroke-linecap="round"
                     stroke-linejoin="round"
                   >
